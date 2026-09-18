@@ -1,0 +1,18 @@
+main:
+	acc;
+
+	while (nominateur !pair and denominateur !impair
+	 and abs(deno-nomi) !==1 and nomi >=2) {
+	ask for denominateur
+	ask for nominateur
+	}
+	
+	while True:
+	acc *= (4.0* pow(i,2)) / (4.0*pow(i,2) - 1.0); //formule wallis 	compacte
+	
+	if (2.0*i / (2.0*i -1.0) == nomi/deno:
+		acc /=2.0*i / (2.0*i +1.0);
+		//si on a le terme sup on divise par le terme min.
+		break;
+	print(acc);
+	return;
