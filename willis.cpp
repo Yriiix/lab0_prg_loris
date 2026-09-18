@@ -27,15 +27,11 @@ int main(void) {
     int i =1;
     while (true) {
         acc *= (4.0* pow(i,2)) / (4.0*pow(i,2) - 1.0);
-        //double n = (2.0*i / (2.0*i -1.0));
-        if (2.0*i / (2.0*i -1.0) == double(nomi)/double(deno) or 2.0*i / (2.0*i +1.0) == double(nomi)/double(deno)) {
-            if (2.0*i / (2.0*i -1.0) == double(nomi)/double(deno)) {
-                acc /=2.0*i / (2.0*i +1.0);
-            }
+        if (2.0*i / (2.0*i -1.0) == double(nomi)/double(deno)) {
+            acc /=2.0*i / (2.0*i +1.0);
             break;
         }
         i++;
-
     }
     cout << acc << endl;
     return 0;
